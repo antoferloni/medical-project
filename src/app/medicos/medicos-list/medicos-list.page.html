@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lista de los Medicos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list [inset]="true">
+    <ion-item [routerLink]="['/medicos-edit/' + medicos.id]" *ngFor="let medicos of listaMedicos">
+     <ion-label> {{medicos.codigo}} - {{medicos.nombre}} {{medicos.apellido}}  </ion-label> 
+    </ion-item>
+  </ion-list>
+
+  <ion-fab  slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button [routerLink]="['/medicos-edit/new']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

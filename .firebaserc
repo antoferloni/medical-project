@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "medical-project2": {
+      "hosting": {
+        "app": [
+          "medical-project2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "medical-project2"
+  }
+}
